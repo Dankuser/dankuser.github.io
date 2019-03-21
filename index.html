@@ -4,7 +4,15 @@
 	<meta charset ="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, width = device-width">
 	<link href="../styles/style.css" rel="stylesheet" type ="text/css">
-    <title> lappenland</title>
+		<title> lappenland</title>
+		<script defer>
+				fetch("https://dog.ceo/api/breeds/image/random").then(raw => raw.json()).then(json => {
+						if (json.status === "success")
+								document.getElementById("WhoAmI").style.backgroundImage = `url("${json.message}")`;
+						else
+								console.error(json)
+				}).catch(e => console.error(e))
+				</script>
     </head>
 	<header>
 		<svg viewBox ="0 0 32 32">
@@ -22,9 +30,8 @@
 	<main>
 		<section id ="WhoAmI">
 			<div class="content">
-					<p><span> Moin Moin,</span></p>			
-					<p> wie man in Luxemburg so schön sagt. Mein Name ist Jannik Clemens, ich bin 21 Jahre alt, komme nicht aus Luxemburg sondern Deutschland. </p>
-					<p> Dies ist mein erster Versuch eine ordentliche Website zu erstellen und werde im Verlauf vieler schrecklicher Monate mich darum kümmern.</p>
+					<p><span> Moin Moin,</span>		
+					<p>wie man in Luxemburg so schön sagt. Mein Name ist Jannik Clemens, ich bin 21 Jahre alt, komme nicht aus Luxemburg sondern Deutschland. </p>
 			</div>
 		</section>
 		<section id="projects" >			

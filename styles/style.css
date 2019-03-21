@@ -55,14 +55,14 @@ main{
 #WhoAmI{
 	background-size:  cover;
 	background-repeat: no-repeat;
+	background-position: center top;
 	padding: 3rem;
-	background-position: 100%;
 	background-image: url("../images/jackrussel.jpg");
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	color: #fff;
-	height: 600px;
+	height: 610px;
 	max-height: 100vh-60px;
 	width: auto;
 	
@@ -153,7 +153,15 @@ main #projects .sectionTitle span::after{
 	border-radius: 0 2px 2px 0;
 }
 
-
+#smug body{
+	background-image: url("../images/12d.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	content: "Dragonball Super: Goku Black Smugface";
+	height: 500px;
+	width: auto;
+}
 
 
 
