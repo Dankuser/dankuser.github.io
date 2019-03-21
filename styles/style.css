@@ -9,12 +9,12 @@ body{
 		background-image: url("../images/background.jpg");
 		background-size: cover;
 		background-position: center;
-		background: #636e72;
+		background: #fff;
 }
 
 header{
-	border-bottom: 3px solid #d63031;
-	background-color: #636e72;
+	border-bottom: 3px solid blue;
+	background-color: #fff;
 	padding-right: 3rem;
 	padding-left: 3rem;
 	width: 100%;
@@ -42,8 +42,9 @@ header{
 }
 header svg{
 	display: inline-block;
-	height: 100%;
+	height: 54px;
 	width: auto;
+	cursor: pointer;
 }
 main{
 	flex: 1 0 auto;
@@ -60,7 +61,7 @@ main{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	color: white;
+	color: #fff;
 	height: 600px;
 	max-height: 100vh-60px;
 	width: auto;
@@ -81,5 +82,78 @@ main section > h1:first-child{
 	font-size: 2rem;
 	font-weight: 500;
 }
+header nav{
+	display: inline-block;
+	position: absolute;
+	right: 3rem;
+	
+}
+header nav ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+}
+header nav li{
+
+	font-size: 12pt;
+}
+header nav ul li a{
+	display:inline-block;
+	color: inherit;
+	background: transparent;
+	transition: all 300ms ease-in-out;
+	text-decoration: none;
+	line-height: 57px;
+	height: 57px;
+	padding: 0 10px;
+	margin: 0 5px;
+	letter-spacing: .05rem;
+	text-transform: uppercase;
+}
+a:hover, a:active{
+	background-color:#95afc0;
+	color: #fff;
+	cursor: pointer;
+}
+.sectionTitle{
+	text-align: center;
+	margin: 1rem 0 3rem;
+
+}
+.sectionTitle span{
+	display: inline-block;
+	position: relative;
+}
+
+main #projects .sectionTitle span::before{
+	content: " ";
+	display: block;
+	background-color: blue;
+	width: 2rem;
+	height: 5px;
+	position: absolute;
+	top: calc(50% - 2px);
+	bottom: calc(50% - 2px);
+	right: -3rem;
+	border-radius: 2px 0 0 2px;
+}
+
+main #projects .sectionTitle span::after{
+	content: " ";
+	display: block;
+	background-color: blue;
+	width: 2rem;
+	height: 5px;
+	position: absolute;
+	top: calc(50% - 2px);
+	bottom: calc(50% - 2px);
+	left: -3rem;
+	border-radius: 0 2px 2px 0;
+}
+
+
+
 
 
