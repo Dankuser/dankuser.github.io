@@ -1,23 +1,26 @@
 html,body{
-		width: 100%;
-		min-height: 100vh;
 		margin: 0;
 		padding: 0;
 }
 
 body{
+		width: 100%;
+		min-height: 100vh;
 		background-image: url("../images/background.jpg");
 		background-size: cover;
 		background-position: center;
+		background: #636e72;
 }
 
 header{
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #d63031;
+	background-color: #636e72;
 	padding-right: 3rem;
-	padding-left:3rem;
+	padding-left: 3rem;
 	width: 100%;
 	height: 60px;
 	text-align: center;
+	position: fixed;
 }
 
 .icon {
@@ -29,3 +32,54 @@ header{
   fill: currentColor;
   
 }
+:root{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #031d26;
+}
+*{
+	box-sizing: border-box;
+}
+header svg{
+	display: inline-block;
+	height: 100%;
+	width: auto;
+}
+main{
+	flex: 1 0 auto;
+	padding-top: 60px;
+	width: 100%;
+	display: block;
+}
+#WhoAmI{
+	background-size:  cover;
+	background-repeat: no-repeat;
+	padding: 3rem;
+	background-position: 100%;
+	background-image: url("../images/jackrussel.jpg");
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: white;
+	height: 600px;
+	max-height: 100vh-60px;
+	width: auto;
+	
+}
+main section > h1:first-child{
+	margin-top:0;
+}
+.content{
+	text-shadow: 0px 2px 3px #031d26;
+}
+
+.content p{
+	
+	margin:0;
+}
+.content span{
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+
