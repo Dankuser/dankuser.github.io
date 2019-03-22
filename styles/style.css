@@ -13,7 +13,7 @@ body{
 }
 
 header{
-	border-bottom: 3px solid blue;
+	border-bottom: 3px solid #3498db;
 	background-color: white;
 	padding-right: 3rem;
 	padding-left: 3rem;
@@ -59,12 +59,13 @@ main{
 	background-position: center top;
 	padding: 3rem;
 	background-image: url("../images/jackrussel.jpg");
+	background-attachment: fixed;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	color: #fff;
 	height: 610px;
-	max-height: 100vh-60px;
+	max-height: calc(100vh-60px);
 	width: auto;
 	
 }
@@ -113,6 +114,10 @@ header nav ul li a{
 	letter-spacing: .05rem;
 	text-transform: uppercase;
 }
+header nav ul li a:link, a:visited{
+	color: black;
+}
+
 header nav ul li a:hover, a:active{
 	background-color:#95afc0;
 	color: #fff;
@@ -135,7 +140,7 @@ header nav ul li a:hover, a:active{
 main #projects .sectionTitle span::before{
 	content: " ";
 	display: block;
-	background-color: blue;
+	background-color: #3498db;
 	width: 2rem;
 	height: 5px;
 	position: absolute;
@@ -148,7 +153,7 @@ main #projects .sectionTitle span::before{
 main #projects .sectionTitle span::after{
 	content: " ";
 	display: block;
-	background-color: blue;
+	background-color: #3498db;
 	width: 2rem;
 	height: 5px;
 	position: absolute;
@@ -203,7 +208,7 @@ main #projects .projectlink a:link, a:visited{
 }
 
 main #projects .projectlink a:hover, a:active{
-	color: blue;
+	color: #3498db;
 	background-color: transparent;
 }
 
@@ -246,33 +251,28 @@ main #projects .projectContent ul{
 	height: auto;
 }
 #contactInfo{
-	display:flex;
 	max-width: 1000px;
 	margin: 0 auto;
-	height: 3rem;
 	border-radius: 3px;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.4);
 
 }
-#contactInfo #email{
-	display:inline-block;
+
+#contactInfo h3{
 	width: 100%;
 	background-color: white;
-}
-#contactInfo #email h3{
-	display: flex;
-	justify-content: flex-start;
 	margin-top: 1rem;
-	padding-left: 1rem;
+	padding: 1rem;
 	font-size: 14pt;
 	font-weight: 100;
 	margin-bottom: 0;
 }
-#contactInfo #email h3 a:link, a:visited{
+#contactInfo h3 a:link, a:visited{
 	text-decoration: none;
+	color: #3498db;
 }
 
-#contactInfo #email h3 a:hover, a:active{
+#contactInfo h3 a:hover, a:active{
 	text-decoration: underline;
 }
 
