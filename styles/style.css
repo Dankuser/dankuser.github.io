@@ -267,7 +267,7 @@ main #projects .projectContent ul{
 	font-weight: 100;
 	margin-bottom: 0;
 }
-#contactInfo h3 a:link, a:visited{
+#contactInfo h3 a{
 	text-decoration: none;
 	color: #3498db;
 }
