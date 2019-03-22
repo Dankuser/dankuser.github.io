@@ -21,6 +21,7 @@ header{
 	height: 60px;
 	text-align: center;
 	position: fixed;
+	z-index: 10;
 }
 
 .icon {
@@ -112,7 +113,7 @@ header nav ul li a{
 	letter-spacing: .05rem;
 	text-transform: uppercase;
 }
-a:hover, a:active{
+header nav ul li a:hover, a:active{
 	background-color:#95afc0;
 	color: #fff;
 	cursor: pointer;
@@ -243,5 +244,35 @@ main #projects .projectContent ul{
 .projectImage img{
 	width: 100%;
 	height: auto;
+}
+#contactInfo{
+	display:flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 3rem;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+
+}
+#contactInfo #email{
+	display:inline-block;
+	width: 100%;
+	background-color: white;
+}
+#contactInfo #email h3{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 1rem;
+	padding-left: 1rem;
+	font-size: 14pt;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+#contactInfo #email h3 a:link, a:visited{
+	text-decoration: none;
+}
+
+#contactInfo #email h3 a:hover, a:active{
+	text-decoration: underline;
 }
 
